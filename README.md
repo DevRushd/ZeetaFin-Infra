@@ -1,4 +1,4 @@
-# Zeeta Infra — Production AWS VPC with ALB + ASG
+# GridSynk Infra — Production AWS VPC with ALB + ASG
 
 Terraform configuration for a production-grade AWS environment with a VPC, Application Load Balancer (public subnets), and Auto Scaling Group (private subnets).
 
