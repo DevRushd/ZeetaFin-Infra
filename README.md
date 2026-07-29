@@ -74,8 +74,8 @@ terraform apply
 | `my_ip` | yes | — | Admin IP for security group references |
 | `instance_type` | yes | — | EC2 instance type |
 | `key_pair` | yes | — | EC2 key pair name |
-| `asg_min_size` | no | `2` | Minimum ASG instances |
-| `asg_max_size` | no | `6` | Maximum ASG instances |
+| `asg_min_size` | no | `1` | Minimum ASG instances |
+| `asg_max_size` | no | `4` | Maximum ASG instances |
 | `asg_desired_capacity` | no | `2` | Desired ASG instances |
 | `certificate_arn` | no | `null` | ACM certificate ARN for HTTPS listener |
 | `enable_deletion_protection` | no | `false` | Enable ALB deletion protection |
