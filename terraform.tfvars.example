@@ -1,14 +1,13 @@
 aws_region     = "eu-west-1"
 vpc_cidr       = "10.0.0.0/16"
-name_prefix    = "myapp"
-my_ip          = "YOUR_IP/32"
+name_prefix    = "gridsynk"
+my_ip          = "197.220.59.12/32"
 instance_type  = "t3.small"
-key_pair       = "YOUR_KEYPAIR_NAME"
-
-# asg_min_size              = 1
-# asg_max_size              = 4
-# asg_desired_capacity      = 2
-# certificate_arn           = "arn:aws:acm:region:account:certificate/xxxx"
-# enable_deletion_protection = false
-# flow_logs_retention_days  = 30
-# alarm_arn                 = "arn:aws:sns:region:account:MyTopic"
+key_pair       = "gridsynk-keypair"
+asg_min_size   = 2
+asg_max_size = 6
+asg_desired_capacity  = 3
+certificate_arn           = "arn:aws:acm:region:account:certificate/xxxx"
+enable_deletion_protection = false
+flow_logs_retention_days  = 30
+alarm_arn                 = "arn:aws:sns:region:account:gridsynk-alert"
