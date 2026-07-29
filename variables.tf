@@ -38,13 +38,13 @@ variable "key_pair" {
 variable "asg_min_size" {
   description = "Minimum number of instances in ASG"
   type        = number
-  default     = 2
+  default     = 1
 }
 
 variable "asg_max_size" {
   description = "Maximum number of instances in ASG"
   type        = number
-  default     = 6
+  default     = 4
 }
 
 variable "asg_desired_capacity" {
